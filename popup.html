@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FB.css">
+    <title>Login Register</title>
+</head>
+<body>
+    <div class="partition1">
+        <div class="signUp_Top">
+            <h2 class="txt1"><b>Sign Up</b></h2>
+            <h5 class="txt2">It's quick and easy.</h5>
+            <hr class="hr">
+        </div>
+        <script src="scripts.js" type="text/javascript"></script>
+        <!--Sign Up Form starts here-->
+    <form class="sUF" onsubmit="return false;">
+        <input type="text" class="names" placeholder="First name" name="t3" id="n1">
+        <input type="text" class="names" placeholder="Surname" name="t2" id="n2"><br>
+        <input type="text" class="mobile" placeholder="Mobile number or Email address" name="t3" id="m1"><br>
+        <input type="password" class="mobile" placeholder="New password" name="t4" id="p1"><br>
+        <h6 class="textDOB">Date of Birth?</h6><br>
+        <!--<input type="date">-->
+        <input type="date" class="DOB" id="DOB_field">
+        <!--Gender section-->
+        <h6 class="gOption">Gender?</h6>
+        <!--main Span-->
+    <span class="mSpan">
+        <!--sub Span-->    
+        <span class="sSpan">
+            <label class="label" for="Female">Female</label>
+            <input type="radio" id="Female" class="rBtn" name="sex" value="Female">
+            </span>
+        <span class="sSpan">
+            <label class="label" for="Male">Male</label>
+            <input type="radio" id="Male" class="rBtn" name="sex" value="Male">
+            </span>
+        <span class="sSpan">
+            <label class="label" for="Custom">Custom</label>
+            <input type="radio" id="Custom" class="rBtn" name="sex" value="Custom">
+            </span>
+    </span>
+        <button class="sUB" style="color:whitesmoke" onclick="signUpValidation()"><b>Sign Up<b></b></button>
+    </form>
+    </div>
+<div>
+<!--Right side of the html page-->
+<div class="partition2">
+<!--Login Form starts here-->
+<form class="lForm" name="loginForm">
+    <input type="text" class="iEorP_P" id="l1" placeholder="Email address or phone number"><br>
+    <input type="password" class="iEorP_P" id="l2"  placeholder="Password"><br>
+    <!--JS Method calling-->
+    <button class="lBtn" style="color:whitesmoke" onclick="login()"><strong>Log In</strong></button>
+    <h3 class="fPwd"><a href="Forgotten password?">Forgotten password?</a></h3>
+    <hr>
+    <button class="cNA" style="color:whitesmoke" type="submit" ><a href ="">Create New Account</a></button>
+</form>
+    <h3 class="fC"><a>Create a Page</a> for a celebrity, brand or business.</h3>
+</div>
+</div>
+
+</body>
+</html>
