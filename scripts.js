@@ -62,3 +62,19 @@ var birthField = document.getElementById("DOB_field").value;
                         alert("success");
                             }
     }       
+/*  var radio = document.querySelector('input[name=sex]:checked').value;
+        signupArr.push([fname,lname,signmobNum,signupPwd,birthField,radio]);//signup array
+        console.log(signupArr);
+        localStorage.setItem("locStr",JSON.stringify(signupArr));
+        alert("User registered");
+     }   
+        function login(){
+            var logMobNum = document.getElementById("l1").value;
+            var logMobPwd = document.getElementById("l2").value;
+            var storedItems = JSON.parse(localStorage.getItem("locStr"));
+            console.log(storedItems);
+            for(let i=0;i<storedItems.length;i++){
+                var innerArray=storedItems[i];
+               var phone= innerArray[2];
+               var pass=  innerArray[3];
+               console.log('phone :'+phone+'pass :'+pass); */
